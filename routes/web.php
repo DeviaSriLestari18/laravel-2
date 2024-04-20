@@ -11,22 +11,31 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
+ */
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-// route basic
-Route::get('/about', function () {
-    return '<h1>Halo...</h1>'
-    . "selamat datang diweb app saya <br>"
-    . "laravel , emang keren" ;
+Route::get('/halaman2', function () {
+    return view('animals');
 });
 
-// route basic passsing data to view
-Route::get('/animals', function () {
-    $king = "lion" ;
-    $hewan = ["monkey", "dargonfly", "tiger", "butterfly", "crocodile"];
-    return view ('animal_page' , compact('king', 'hewan'));
-});    
+Route::get('/halaman3', function () {
+    return view('fruits');
+});
+
+Route::get('/about', function () {
+    $nama = "Devia Sri Lestari";
+    $jenis_kelamin = "Perempuan";
+    $pendidikan_terakhir = "SMK";
+    $pekerjaan = "Mahasiswa";
+    return view('biodata', compact('nama', 'jenis_kelamin', 'pendidikan_terakhir', 'pekerjaan'));
+});
+
+// parameter
+
+Route::get('/sample/{nama}', function (Request $request, $nama) {
+    $nama2 = $nama;
+    return view('sample', compact('nama2'));
+});
