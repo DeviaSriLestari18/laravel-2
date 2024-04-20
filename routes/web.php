@@ -16,3 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// route basic
+Route::get('/about', function () {
+    return '<h1>Halo...</h1>'
+    . "selamat datang diweb app saya <br>"
+    . "laravel , emang keren" ;
+});
+
+// route basic passsing data to view
+Route::get('/animals', function () {
+    $king = "lion" ;
+    $hewan = ["monkey", "dargonfly", "tiger", "butterfly", "crocodile"];
+    return view ('animal_page' , compact('king', 'hewan'));
+});    
