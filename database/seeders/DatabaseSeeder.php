@@ -12,7 +12,7 @@ class DatabaseSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(): void
     {
         // \App\Models\User::factory(10)->create();
 
@@ -20,5 +20,18 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        $this->call([
+            AlbumMusikSeeder::class,
+        ]);
+        $this->call([
+            FilmSeeder::class,
+        ]);
+        $this->call([
+            DetailFilmSeeder::class,
+        ]);
+        $this->call([
+            MediaFilmSeeder::class,
+        ]);
+
     }
 }

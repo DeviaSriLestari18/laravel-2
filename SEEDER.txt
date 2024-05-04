@@ -1,0 +1,235 @@
+album_musik::insert(
+            [
+                'judul' => 'Pura Pura Lupa',
+                'tahun' => '2022',
+                'cover_album' => 'Mahen',
+            ]
+        );
+        album_musik::insert(
+            [
+                'judul' => 'Bentuk Cinta',
+                'tahun' => '2019',
+                'cover_album' => 'ECLAT Story',
+            ]
+        );
+        album_musik::insert(
+            [
+                'judul' => 'Rindu Dalam Hati',
+                'tahun' => '2021',
+                'cover_album' => 'Brisia Jodie',
+            ]
+        );
+        album_musik::insert(
+            [
+
+                'judul' => 'Awas Jatuh Cinta',
+                'tahun' => '2022',
+                'cover_album' => 'Armada',
+            ]
+        );
+        album_musik::insert(
+            [
+
+                'judul' => 'Nyaman',
+                'tahun' => '2020',
+                'cover_album' => 'Andmesh',
+            ]
+        );
+        album_musik::insert(
+            [
+                'judul' => 'Secukupnya',
+                'tahun' => '2019',
+                'cover_album' => 'Hindia',
+            ]
+        );
+        album_musik::insert(
+            [
+
+                'judul' => 'Tak Lagi Sama',
+                'tahun' => '2021',
+                'cover_album' => 'Rizky Febian',
+            ]
+        );
+        album_musik::insert(
+            [
+
+                'judul' => 'Tawa',
+                'tahun' => '2024',
+                'cover_album' => 'Nadin Amizah',
+            ]
+        );
+        album_musik::insert(
+            [
+
+                'judul' => 'Menangis Dijalan Pulang',
+                'tahun' => '2021',
+                'cover_album' => 'Nadin Amizah',
+            ]
+        );
+        album_musik::insert(
+            [
+
+                'judul' => 'Sebuah Tarian',
+                'tahun' => '2020',
+                'cover_album' => 'Nadin Amizah',
+            ]
+        );
+        album_musik::insert(
+            [
+
+                'judul' => 'Sorai',
+                'tahun' => '2020',
+                'cover_album' => 'Nadin Amizah',
+            ]
+        );
+        album_musik::insert(
+            [
+
+                'judul' => 'paman tua',
+                'tahun' => '2020',
+                'cover_album' => 'Nadin Amizah',
+            ]
+        );
+        album_musik::insert(
+            [
+
+                'judul' => 'hormat pada tuan',
+                'tahun' => '2024',
+                'cover_album' => 'Nadin Amizah',
+            ]
+        );
+        album_musik::insert(
+            [
+
+                'judul' => 'jangan ditelan',
+                'tahun' => '2020',
+                'cover_album' => 'Nadin Amizah',
+            ]
+        );
+        album_musik::insert(
+            [
+
+                'judul' => ' sorak sorai',
+                'tahun' => '2019',
+                'cover_album' => 'Nadin Amizah',
+            ]
+        );
+        album_musik::insert(
+            [
+
+                'judul' => 'bunga tidur',
+                'tahun' => '2021',
+                'cover_album' => 'Nadin Amizah',
+            ]
+        );
+        album_musik::insert(
+            [
+
+                'judul' => 'selesai',
+                'tahun' => '2023',
+                'cover_album' => 'Nadin Amizah',
+            ]
+        );
+        album_musik::insert(
+            [
+
+                'judul' => 'selaras',
+                'tahun' => '2020',
+                'cover_album' => 'Nadin Amizah',
+            ]
+        );
+        album_musik::insert(
+            [
+
+                'judul' => 'dan , selesai',
+                'tahun' => '2021',
+                'cover_album' => 'Nadin Amizah',
+            ]
+        );
+        album_musik::insert(
+            [
+
+                'judul' => 'kanyaah',
+                'tahun' => '2020',
+                'cover_album' => 'Nadin Amizah',
+            ]
+        );
+        album_musik::insert(
+            [
+
+                'judul' => 'seperti tulang',
+                'tahun' => '2021',
+                'cover_album' => 'Nadin Amizah',
+            ]
+        );
+        album_musik::insert(
+            [
+
+                'judul' => 'mendarah',
+                'tahun' => '2020',
+                'cover_album' => 'Nadin Amizah',
+            ]
+        );
+        album_musik::insert(
+            [
+
+                'judul' => 'rumpang',
+                'tahun' => '2019',
+                'cover_album' => 'Nadin Amizah',
+            ]
+        );
+        album_musik::insert(
+            [
+
+                'judul' => 'beranjak dewasa',
+                'tahun' => '2020',
+                'cover_album' => 'Nadin Amizah',
+            ]
+        );
+        album_musik::insert(
+            [
+
+                'judul' => 'bertaut',
+                'tahun' => '2020',
+                'cover_album' => 'Nadin Amizah',
+            ]
+        );
+        album_musik::insert(
+            [
+
+                'judul' => 'rayuan perempuan gila',
+                'tahun' => '2020',
+                'cover_album' => 'Nadin Amizah',
+            ]
+        );
+        album_musik::insert(
+            [
+
+                'judul' => 'semua aku dirayakan',
+                'tahun' => '2020',
+                'cover_album' => 'Nadin Amizah',
+            ]
+        );
+        album_musik::insert(
+            [
+
+                'judul' => 'taruh',
+                'tahun' => '2020',
+                'cover_album' => 'Nadin Amizah',
+            ]
+        );
+        album_musik::insert(
+            [
+
+                'judul' => 'amin paling serius',
+                'tahun' => '2020',
+                'cover_album' => 'Nadin Amizah',
+            ]
+        );
+        album_musik::insert(
+            [
+                'judul' => 'diakhir pulang',
+                'tahun' => '2020',
+                'cover_album' => 'Nadin Amizah',
+            ]
+        );

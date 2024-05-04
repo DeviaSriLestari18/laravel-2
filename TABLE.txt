@@ -1,0 +1,3 @@
+$table->string('judul');
+            $table->string('tahun');
+            $table->string('cover_album');

@@ -1,5 +1,12 @@
 <?php
 
+use App\Models\Siswa;
+use App\Models\Sekolah;
+use App\Models\albummusik;
+use App\Models\film;
+use App\Models\DetailFilm;
+use App\Models\MediaFilm;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -38,4 +45,21 @@ Route::get('/about', function () {
 Route::get('/sample/{nama}', function (Request $request, $nama) {
     $nama2 = $nama;
     return view('sample', compact('nama2'));
+});
+
+Route::get('siswa', function(){
+    return view ('Siswa');
+});
+
+Route::get('sekolah', function () {
+    return view ('Sekolah');
+});
+Route::get('album_musik', function () {
+    return view('album_musik');
+});
+Route::get('film', function () {
+    return view('film');
+});
+Route::get('film/{id}', function (int $id) {
+    return view('detail-film', ['film' =>Film::find($id)]);
 });
