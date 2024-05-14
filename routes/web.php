@@ -8,7 +8,7 @@ use App\Models\DetailFilm;
 use App\Models\MediaFilm;
 use App\Http\Controllers\MyController;
 use App\Http\Controllers\MovieController;
-
+use App\Http\Controllers\ArtikelController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -74,4 +74,10 @@ Route::get('hewan',[MyController::class,'animals']);
 // route movie
 Route::get('movie',[MovieController::class,'getMovie']);
 Route::get('movie/{id}',[MovieController::class, 'getMovieById']);
+
+//route artikel
+Route::get('artikel', [ArtikelController::class, 'getArtikel']);
+Route::get('artikel/id/{id}', [ArtikelController::class, 'getArtikelById']);
+Route::get('artikel/kategori/{kategori}', [ArtikelController::class, 'getArtikelBykategori']);
+
 

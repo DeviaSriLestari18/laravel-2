@@ -56,7 +56,7 @@ class MediaFilmSeeder extends Seeder
             'film_id' => 2,
             'media_type' => 0,
             'media_title' => 'JUMANJI',
-            'url_media' => 'https://www.imdb.com/star-wars/in-and-out-of-costume/rg3903691520/mediaviewer/rm1087522049?ref_=hm_edcft_g_swio_2_i',
+            'url_media' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiY_2awFv9oJ7b61hMg13ZApH6h-ijstUVMjo5gO--XovsSy5OQP-DmXAfcIk9sBT6Ygc&usqp=CAU',
         ]);
         MediaFilm::insert([
             'film_id' => 2,

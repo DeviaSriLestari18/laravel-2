@@ -32,6 +32,10 @@ class DatabaseSeeder extends Seeder
         $this->call([
             MediaFilmSeeder::class,
         ]);
+        $this->call([
+            ArtikelSeeder::class,
+        ]);
+
 
     }
 }

@@ -19,7 +19,7 @@ class MovieController extends Controller
 
     public function getMovieById($id){
         // menampilkan data movie berdasarkan id yang dipilih
-        $movies = Movie::findOrFail($id);
-        return view('movie.show', compact('movies'));
+        $movie = Movie::findOrFail($id);
+        return view('movie.show', compact('movie'));
     }
 }
