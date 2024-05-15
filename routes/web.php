@@ -9,6 +9,8 @@ use App\Models\MediaFilm;
 use App\Http\Controllers\MyController;
 use App\Http\Controllers\MovieController;
 use App\Http\Controllers\ArtikelController;
+use App\Http\Controllers\PenulisController;
+
 
 use Illuminate\Support\Facades\Route;
 
@@ -72,7 +74,7 @@ Route::get('perkenalan',[App\Http\Controllers\MyController::class,'introduce']);
 Route::get('hewan',[MyController::class,'animals']);
 
 // route movie
-Route::get('movie',[MovieController::class,'getMovie']);
+Route::get('movie',[MovieController::class,'getMovie'])->middleware('auth');
 Route::get('movie/{id}',[MovieController::class, 'getMovieById']);
 
 //route artikel
@@ -81,3 +83,10 @@ Route::get('artikel/id/{id}', [ArtikelController::class, 'getArtikelById']);
 Route::get('artikel/kategori/{kategori}', [ArtikelController::class, 'getArtikelBykategori']);
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// route crud
+Route::resource('penulis',PenulisController::class);

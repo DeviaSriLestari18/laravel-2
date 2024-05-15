@@ -2,6 +2,7 @@
 @section('content')
 <div class="container">
     <div class="row">
+        <center><h1>Artikel</h1></center>
         @foreach ($artikels as $data)
         <div class="col">
             <div class="card" style="width: 18rem;">
