@@ -11,10 +11,11 @@ class Penulis extends Model
 
     public $fillable = ['nama_penulis', 'bio'];
     public $visible = ['nama_penulis', 'bio'];
+    public $timestamps = true;
 
     // membuat relasi one to many ke model buku
     public function buku(){
-        
+
         // data model penulis bisa memiliki banyak data
         // data model buku melalui fk 'id_penulis'
         return $this->hasMany(Buku::class, 'id_penulis');

@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Penulis;
-use request;
 use App\Http\Requests\StorePenulisRequest;
 use App\Http\Requests\UpdatePenulisRequest;
+use Illuminate\Http\Request;
+
 
 class PenulisController extends Controller
 {

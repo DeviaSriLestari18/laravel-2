@@ -8,7 +8,7 @@
                     <a href="{{route('penulis.index')}}" class="btn btn-sm btn-primary" style="float: right">Kembali</a>
                 </div>
                 <div class="card-body">
-                    <form action="{{route('penulis.store')}}" method="post">
+                    <form action="{{route('penulis.update', $penulis->id)}}" method="post">
                         @csrf
                         @method('put')
                         <div class="mb-2">
