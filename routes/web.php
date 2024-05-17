@@ -12,6 +12,7 @@ use App\Http\Controllers\ArtikelController;
 use App\Http\Controllers\PenulisController;
 use App\Http\Controllers\GenreController;
 use App\Http\Controllers\BukuController;
+use App\Http\Controllers\FrontController;
 
 
 use Illuminate\Support\Facades\Route;
@@ -27,9 +28,7 @@ use Illuminate\Support\Facades\Route;
 |
  */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Route::get('/halaman2', function () {
     return view('animals');
@@ -90,10 +89,16 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// route crud
-Route::resource('penulis',PenulisController::class);
+// route admin
+Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
+    Route::resource('penulis', PenulisController::class);
+    Route::resource('genre', GenreController::class);
+    Route::resource('buku', BukuController::class);
+});
 
-Route::resource('genre', GenreController::class);
-Route::resource('buku', BukuController::class);
+// Route guest(tamu / pengunjung)
+Route::get('/', [FrontController::class, 'buku']);
+Route::get('buku/{id}', [FrontController::class, 'detailBuku']);
+
 
 

@@ -14,13 +14,16 @@
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
-                        <table class="table">
+                        <table class="table table-bordered" id="datatable">
+                            <thead>
                             <tr>
                                 <th>No</th>
                                 <th>Nama Penulis</th>
                                 <th>Aksi</th>
                             </tr>
+                            </thead>
                             @php $no =1; @endphp
+                            <tbody>
                             @foreach ($penulis as $item)
                             <tr>
                                 <td>{{$no++}}</td>
@@ -40,6 +43,7 @@
                                 </td>
                             </tr>
                             @endforeach
+                            <tbody>
                         </table>
                     </div>
                 </div>
